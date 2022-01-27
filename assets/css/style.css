@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: inline-block;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    top: 50%;
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.green{
+    left:35%;
+    background-color: green;
+}
+.blue{
+    left: 40%;
+    background-color: indigo;
+    animation-delay: 1.1s;
+}
+.yellow{
+    left: 45%;
+    background-color: khaki;
+    animation-delay: 1.2s;
+}
+.pink{
+    left:50%;
+    background-color: lightpink;
+    animation-delay: 1.3s;
+}
+.purple{
+    left:55%;
+    background-color: purple;
+    animation-delay: 1.4s;
+}
+
+@keyframes jump{
+    0%, 100%{
+        top:50%;
+    }
+    50%{
+        top:40%;
+    }
+}
